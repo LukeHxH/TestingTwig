@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Testando Views com Twig</title>
+	</head>
+	<body>
+		<h1>Eu estou testando uma View utilizando o Framework TWIG Template 1</h1>
+		<h2>Olá {{ nome }}, você tem {{ idade }} anos, e seu email é {{ email }} </h2>
+
+		+++ for user in users +++
+
+			<h5>{{ user.nome }} tem {{ user.idade }} anos, e o email é {{ user.email }}</h5>
+
+		+++ endfor +++
+
+		aqui nós temos a palavra 'string' em criptografia md5: {{ 'string' | md5 }}
+
+	</body>
+</html>
